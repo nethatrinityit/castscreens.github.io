@@ -80,8 +80,8 @@
               Le but ici, afficher le contenu du message dans la <div id="content"><div> plus haut
           */
           ctx.addCustomMessageListener(CHANNEL, function(customEvent) {
-            //var message = customEvent.data
-            var message = "Thank You Jesus"
+            var message = customEvent.data
+            //var message = "Thank You Jesus"
             console.log("Message received from " + 
                         "[" +  customEvent.senderId +  "] " +
                         ": " + message);
