@@ -30,7 +30,7 @@
         C'est dans ce div qu'on va faire apparaître notre contenu ! 🧙
     -->
     <div id="container">
-      <span id="content">Waiting...!</span>
+      <span id="content">Please Wait..!</span>
     </div>
 
     <!-- 
@@ -80,8 +80,8 @@
               Le but ici, afficher le contenu du message dans la <div id="content"><div> plus haut
           */
           ctx.addCustomMessageListener(CHANNEL, function(customEvent) {
-            //var message = customEvent.data
-            var message = "Thank You Jesus, Lord is My Shepard i shall not wand"
+            //var message = customEvent.data;
+            var message = "Thank You Jesus, Lord is My Shepard i shall not wand";
             console.log("Message received from " + 
                         "[" +  customEvent.senderId +  "] " +
                         ": " + message);
