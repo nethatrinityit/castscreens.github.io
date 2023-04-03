@@ -71,6 +71,11 @@
              Comme vous le voyez, c'est un tableau, on peut donc en avoir plus d'un.
              On ne le fera pas ici, mais pour plus d'info: https://developers.google.com/cast/docs/caf_receiver/core_features#custom_messages
           */
+          
+          const objToSender = 
+              {
+                type: 'status', message: 'Playing'};
+          
           options.customNamespaces = Object.assign({});
           options.customNamespaces[CHANNEL] = cast.framework.system.MessageType.JSON;
 
@@ -87,7 +92,8 @@
                         ": " + message);
             document.getElementById("content").innerHTML = message;
           });
-
+          ctx.sendCustomMessage(CHANNEL, objToSender);
+          
           /*
               On démarre tout ça et hop
           */
