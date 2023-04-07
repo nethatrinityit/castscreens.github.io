@@ -9,7 +9,16 @@
       background: white;
       color: black;
     }
-
+      
+ .bg {
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow: hidden;
+      position: relative;
+     }
+      
     #container {
       width: 100vw;
       height: 100vh;
@@ -19,8 +28,9 @@
     }
 
     #content {
-      font-family: 'Roboto', sans-serif;
-      font-size: 6em;
+      font-family: 'Roboto', sans-serif;      
+      font-size: 20px;
+      color: #FF7A59;
     }
     </style>
   </head>
@@ -29,7 +39,7 @@
     <!-- 
         C'est dans ce div qu'on va faire apparaître notre contenu ! 🧙
     -->
-    <div id="container">
+    <div id="container" class="bg">
       <span id="content">Please Wait</span>
     </div>
 
